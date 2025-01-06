@@ -51,8 +51,8 @@
         img {
             max-width: 100%;
             height: auto;
+            max-height: 300px; /* Constrain the height */
             margin-top: 20px;
-            display: none;
         }
 
         @media (min-width: 600px) {
@@ -68,6 +68,10 @@
                 padding: 14px 28px;
                 font-size: 1.1rem;
             }
+
+            img {
+                max-height: 400px; /* Slightly larger height for bigger screens */
+            }
         }
     </style>
 </head>
@@ -75,7 +79,7 @@
     <div class="container">
         <h1>Let's Plan Our Date Today</h1>
         <p>I want to spend time with you...</p>
-<!--         <button class="btn-yes">Accept</button> -->
+        <button class="btn-yes">Accept</button>
         <img src="assets/oh-yay.gif" alt="yes" class="image-2" />
     </div>
 </body>
